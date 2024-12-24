@@ -12,6 +12,12 @@
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+# 取消注释 Feed 源
+sed -i 's/^#\(.*5G-Modem-Support\)/\1/' feeds.conf.default
+
+# 添加 Feed 源
+echo 'src-git 5G-Modem-Support https://github.com/Siriling/5G-Modem-Support?tab=readme-ov-file' >>feeds.conf.default
+
 
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
